@@ -1,0 +1,45 @@
+Functional Programming is a programming paradigm centered around pure functions
+Pure function
+1. Same arguments always provide the same output
+	a. No data outside of the function can change function's output
+2. No side effects
+	b. No data outside of the function can be changed after the function call
+
+"Object-oriented programming makes code understandable by encapsulating moving parts. Functional programming makes code understandable by minimizing moving parts." Michael Feathers
+
+Encapsulating hides dependencies and makes testing difficult.
+Functional programming keeps the importance on the data and its operations.
+	
+Pros
+	Testability
+		It enforces a testable unit because dependency injection
+	Maintainability, Traceability
+		Dependencies are clear, because scope is limited
+	Portability
+		Dependencies are on data structures, which acts as interfaces, not implementations
+	Representatation
+		Mathematics
+		Data flow - going from a UML 2.0 OO class hierarchy to data flow diagram 
+	More Deterministic because state is easier to track
+	Safety
+		Determinism + Testibility + Traceability
+Cons
+	Lots of parameter passing
+	Potential performance loss due to copying variables
+	Does not handle system resources well
+		threads
+		memory management
+		mutexes 
+		IO
+			comms
+			console
+			UI
+	
+Tip use functional style for most things. Create separate units to handle system resources.
+	
+Recursion is often used in functional programming, but I would prefer that we follow MISRA C 2004, MISRA C 2012, and MISRA C++ 2008 against it
+	
+Practical examples
+1. Returning multiple values
+2. Currying with bind
+3. Lambdas

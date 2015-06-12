@@ -1,0 +1,15 @@
+defininitions (rephrased from Wikipedia)
+	currying - evaluating a function with many arguments by evaluating functions with one argument
+	partial appplication - fixing function arguments to produce another function with less arguments
+
+The examples cover partial application and not currying. It's really just 
+an attempt at doing polymorphism without classes.
+
+Furthering the idea that functional programming is the next step of the SOLID 
+principles, using functions as interfaces takes the I, which stands for 
+interface segregation, to the extreme. The functional interface only cares about
+the number of arguments and the return type. The number of arguments can be
+modified with partial application for abstraction. Not requiring a function to 
+be named a certain way and not worrying the chain of implementation from 
+subclasses improves flexibility.
+
